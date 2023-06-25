@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#page-body{
+    height: 100%;
+    width: 100%;
+    /* background-color: gray; */
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    height: 3rem;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+#navbar-logo-image{
+    width: 4rem;
+}
+
+#navbar-logo{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.navbar-name{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-left: 0.5rem;
+}
+
+#navbar-links{
+
+}
+
+.navbar-link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0.7rem;
+    transition: 150ms ease-in-out;
+}
+
+.navbar-link:hover{
+    /* font-size: 1.1rem; */
+    color: rgb(128, 219, 255);
+    border-bottom: 2px solid rgb(128, 219, 255);
+    padding-bottom: 0.2rem;
+}
+
+
+@media screen and (width < 900px) {
+    #navbar-logo{
+        width: 4rem;
+    }
+
+    .navbar-link{
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 100;
+        margin: 0.3rem;
+    }
+
+    .navbar-link:hover{
+        font-size: 1rem;
+        color: rgb(128, 219, 255);
+        border-bottom: 1px solid rgb(128, 219, 255);
+        padding-bottom: 0.1rem;
+    }
+}
+
+@media screen and (width < 350px){
+
+    #navbar-logo-image{
+        width: 2.5rem;
+    }
+    
+    #navbar-logo{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .navbar-name{
+        opacity: 0;
+    }
+
+    .navbar-link{
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 100;
+        margin: 0.3rem;
+    }
+}
+
+
+:root{
+    --body-color:
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

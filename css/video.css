@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+#video-info{
+    height: 90vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video-info-text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+#sentence{
+    font-size: 2rem;
+}
+
+#watch-link-div{
+    display: flex;
+    margin: 5rem;
+    padding: .5rem .8rem;
+    background-color: watch-now-bg;
+    border: none;
+    border-radius: 1rem;
+    animation: watch-now-bg 4s infinite;
+}
+
+#watch-now-link{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: watch-now;
+    width: 10rem;
+    border-radius: 1rem;
+    padding: .5rem .8rem;
+    text-align: center;
+    animation: watch-now 4s infinite ;
+}
+
+@media screen and (width < 600px){
+    #sentence{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (width < 400px){
+    #sentence{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (width < 300px){
+    #sentence{
+        font-size: 1rem;
+    }
+}
+
+
+@keyframes watch-now{
+    0%{
+        color: rgb(255, 255, 255);
+    }    
+    50%{
+        color: rgb(0, 0, 0);
+    }    
+    100%{
+        color: rgb(255, 255, 255);
+    }    
+}
+
+@keyframes watch-now-bg{
+    0%{
+        background: rgb(22, 22, 22);
+    }    
+    50%{
+        background: rgb(255, 255, 255);
+    }    
+    100%{
+        background: rgb(22, 22, 22);
+    }  
+}
+
+
+

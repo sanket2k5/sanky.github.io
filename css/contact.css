@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+#page-content{
+    display: flex;
+    /* background-color: red; */
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-div{
+    height: 85%;
+    width: 40%;
+    /* background-color: blue; */
+    border: 2px solid;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: breathe 2s infinite;
+}
+
+#email-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 40%;
+    /* background-color: green; */
+}
+
+#mail-us{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+#socials-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 40%;
+    /* background-color: pink; */
+}
+
+#social-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+#connect-socials{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.social-link{
+    color: white;
+    font-size: 5rem;
+}
+
+#info-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+#line-between{
+    width: 100%;
+    border: 1px solid;
+    animation: breathe 2s infinite;
+}
+
+
+
+@media screen and (width < 1200px){
+    
+    #contact-div{
+        height: 50%;
+        width: 70%;
+    }
+    
+}
+
+@media screen and (width < 700px){
+    
+    #contact-div{
+        height: 40%;
+        width: 65%;
+    }
+    
+    .social-link{
+        color: white;
+        font-size: 3rem;
+    }
+}
+
+@media screen and (width < 400px){
+    
+    #contact-div{
+        height: 40%;
+        width: 70%;
+    }
+    
+    .social-link{
+        color: white;
+        font-size: 3rem;
+    }
+
+    .social-link{
+    color: white;
+    font-size: 2.5rem;
+    }
+
+    #info-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+    width: 80%;
+    }
+
+}
+
+
+
+
+@keyframes breathe {
+    0% {
+        border-color: #2e2e2e;
+    }    
+    50% {
+        border-color: #ffffff;
+    }    
+    100% {
+        border-color: #2e2e2e;
+    }
+  }

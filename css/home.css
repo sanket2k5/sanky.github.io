@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+#page-mid{
+    display: flex;
+    justify-content: center;
+}
+
+#page-mid-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* background-color: gray; */
+    width: 90vw;
+    height: 90vh;
+}
+
+.catagory-box{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-around;
+    width: 20rem;
+    height: 14rem;
+    border: 0.2rem solid rgb(71, 71, 71);
+    border-radius: 1.4rem;
+}
+
+.catagory-box-top{
+    display: flex;
+}
+
+.catagory-box-mid{
+    overflow: hidden;
+}
+
+.catagory-box-bottom{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.catagory-title{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.catagory-text{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 1rem;
+	font-weight: 200;
+	/* display: inline-block;
+	color: #fff;
+	background: linear-gradient(180deg, rgba(255,255,255,1), rgba(255,255,255,0));
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent; */
+}
+
+.launch{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 1rem;
+}
+
+.launch:hover{
+    transition: 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    font-size: 1.2rem;
+}
+
+#video-box{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .7), rgba(0, 0, 0, 0)), url(../img/worldneon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+#shop-box{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .7), rgba(0, 0, 0, 0)), url(../img/techbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#more-box{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, .7), rgba(0, 0, 0, 0)), url(../img/more.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/***************/
+/* Responsive */
+/**************/
+
+@media screen and (width < 1000px){
+
+    #page-mid-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .catagory-box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (width < 400px){
+    #page-mid-content{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .catagory-box{
+        display: flex;
+        width: 15rem;
+        height: 10rem;
+        border-radius: 1.4rem;
+    }
+
+    .launch{
+        margin-right: 1rem;
+        margin-bottom: .4rem;
+    }
+}

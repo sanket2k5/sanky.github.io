@@ -1,0 +1,105 @@
+#mid-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+#lists-div{
+    display: grid;
+    justify-content: center;
+    overflow: auto;
+    gap: 1rem;
+    width: 80vw;
+    height: 80vh;
+    padding: 1rem;
+}
+
+.lists{
+    display: flex;
+    width: 70vw;
+    height: 18vh;
+    background-color: rgb(31, 31, 31);
+    border-radius: 1rem;
+}
+
+.list-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    width: fit-content;
+    height: 100%;
+    background-color: rgb(26, 26, 26);
+    border-radius: 1rem;
+}
+
+.list-right{
+    display: flex;
+    padding: .5rem;
+    width: 100%;
+    /* background-color: gray; */
+}
+
+.item-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item-img{
+    width: 7rem;
+    border-radius: 1rem;
+    aspect-ratio: 1/1;
+}
+
+.item-text-div{
+    /* background-color: blue; */
+}
+
+.purchase-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.item-price-div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* background-color: red; */
+    height: 30%;
+    width: 100%;
+}
+
+.item-text{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.item-price{
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+}
+
+.buy-now:hover{
+    background-color: rgb(80, 80, 80);
+    cursor: pointer;
+}
+
+.item-buy-div{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.buy-now{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(17, 17, 17);
+    padding: 0.6rem;
+    border-radius: .5rem;
+    padding: .8rem 1rem .8rem 1rem;
+}
